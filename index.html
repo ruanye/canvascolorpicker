@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″/>
+    <title>HTML5 Color Picker (canvas) - Var 1 | Script Tutorials</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+ </head>
+<body>
+    <div class="container" id="con">
+        <!-- preview element -->
+        <div id="preview"></div>
+        <!-- colorpicker element -->
+        <div id="colorpicker" style="display:block;">
+            <div id="colorpickers">
+          
+            </div>
+            <div class="controls">
+                <div>
+                    <label>R</label>
+                    <input type="text" id="rVal" />
+                </div>
+                <div>
+                    <label>G</label>
+                    <input type="text" id="gVal" />
+                </div>
+                <div>
+                    <label>B</label>
+                    <input type="text" id="bVal" />
+                </div>
+                <div>
+                    <label>RGB</label>
+                    <input type="text" id="rgbVal" />
+                </div>
+                <div>
+                    <label>HEX</label>
+                    <input type="text" id="hexVal" />
+                </div>
+            </div>
+        </div>
+        <div style="position: fixed; top:400px">
+        <input type="text" id="setcolot"><button id="setcolor-btn">setit</button>
+        </div>
+    </div>
+    <script src='js/index.js'></script>
+</body>
+   <script>
+   var colorPicker = new CanvasColorPicker({
+      id: "colorpickers",
+      size: 300,
+      url:'images/colorwheel1.png',
+      callback:function () {
+          alert('canvas成功加载')
+      }
+    });
+   </script>
+</html>

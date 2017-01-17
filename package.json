@@ -1,0 +1,16 @@
+{
+  "name": "colorpicker",
+  "version": "1.0.0",
+  "description": "简单的取色器",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ry",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1"
+  }
+}
